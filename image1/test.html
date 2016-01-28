@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<body> 
+
+<script type="text/javascript">
+function getElem(elem) {
+   var elems = elem.getElementsByTagName('div');
+   var first_el = elems[0];
+
+   if(first_el.getAttribute('active') == undefined || first_el.getAttribute('active') == '0') {
+      first_el.style.color = 'red';
+      first_el.setAttribute('active', '1');
+   }
+   else {
+      first_el.style.color = 'blue';
+      first_el.setAttribute('active', '0');
+   }
+
+}
+
+
+</script>
+<form> 
+<label><input name="settime" type="checkbox" onclick="this.form.time.style.visibility = this.checked ? 'visible' : 'hidden'" /> knipka</label>
+<input name="time" style="visibility:hidden" />  
+</form>
+<a style=\"{cursor:pointer;display:inline;}\" id=\"si_aaconf\">
+    <div style=\"тут_я_чего_ни_будь_напишу_1\">слово</div>
+</a>
+// нажали, стиль другой
+<a style=\"{cursor:pointer;display:inline;}\" id=\"si_aaconf\" onclick="getElem(this);">
+    <div style=\"тут_я_чего_ни_будь_напишу_2\">слово</div>
+</a>
+
+
+</body>
+</html>

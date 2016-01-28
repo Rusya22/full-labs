@@ -1,0 +1,2 @@
+﻿a.bar > .inner {display:none;}
+a.bar:hover > .inner {display:block;}

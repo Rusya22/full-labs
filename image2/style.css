@@ -1,0 +1,10 @@
+﻿a.bar > .inner {display:none;}
+a.bar:hover > .inner {display:block;}
+.a-btn:active {
+ position:relative;
+ top:1px;
+ background: linear-gradient(top, #fec354 0%,#fecd61 100%); /* W3C */
+ border-color: #d29a3a #cc9436 #c89133;
+ text-shadow: 0 1px 0 #fee1a0;
+ box-shadow: 0 1px 1px #d4d4d4, inset 0 1px 0 #fed17e;
+}
